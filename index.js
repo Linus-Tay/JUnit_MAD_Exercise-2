@@ -16,9 +16,10 @@ let DATA = {
     hour: 'numeric',
     minute: 'numeric',
     timeZoneName: 'short',
-    timeZone: 'Europe/Stockholm',
+    timeZone: 'Singapore',
   }),
 };
+
 /**
   * A - We open 'main.mustache'
   * B - We ask Mustache to render our file with the data
@@ -27,7 +28,7 @@ let DATA = {
 function generateReadMe() {
   fs.readFile(MUSTACHE_MAIN_DIR, (err, data) =>  {
     if (err) throw err;
-    const output = Mustache.render(data.toString(), {"Test":"Work please"});
+    const output = Mustache.render(data.toString(), DATA);
     fs.writeFileSync('README.md', output);
   });
 }
