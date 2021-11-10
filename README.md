@@ -1,1 +1,1 @@
-My name is Linus and I am .
+My name is Linus and I am Wednesday, 10 November, 15:36 GMT+8.
