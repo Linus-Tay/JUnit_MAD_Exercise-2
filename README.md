@@ -1,1 +1,0 @@
-My name is Linus and I am Monday, 22 November, 14:08 GMT+8.
