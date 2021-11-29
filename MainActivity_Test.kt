@@ -24,12 +24,4 @@ class MainActivityTest {
         onView(withId(R.id.btnFollow)).perform(click())
         onView(withId(R.id.btnFollow)).check(matches(withText("Unfollow")));
     }
-
-    @Test
-    fun failTest() {
-        val activityScenario = launch(MainActivity::class.java)
-        onView(withId(R.id.Follow)).perform(click())
-        onView(withId(R.id.Follow)).perform(click())
-        onView(withId(R.id.Follow)).check(matches(withText("Unfollow")));
-    }
 }
